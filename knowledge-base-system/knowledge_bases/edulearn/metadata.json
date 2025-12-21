@@ -1,0 +1,13 @@
+{
+  "company_id": "edulearn",
+  "company_name": "EduLearn",
+  "description": "Comprehensive online education platform offering courses, certificates, and degrees",
+  "active": true,
+  "categories": ["enrollment", "courses", "payments", "technical", "certificates"],
+  "contact": {
+    "email": "support@edulearn.com",
+    "phone": "1-800-EDU-LEARN",
+    "chat": "Live chat available 24/7",
+    "hours": "Support: Monday-Sunday 6 AM - 10 PM EST"
+  }
+}

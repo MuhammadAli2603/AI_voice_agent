@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "name": "UltraBook Pro 15",
+      "category": "products",
+      "description": "The UltraBook Pro 15 is our flagship laptop featuring a 15.6-inch 4K OLED display, Intel Core i9 processor, 32GB RAM, and 1TB NVMe SSD. Perfect for professionals and content creators who demand the best performance. Battery life up to 12 hours. Includes Thunderbolt 4 ports, WiFi 6E, and a backlit keyboard. Weighs only 3.5 pounds with an aluminum unibody design. Comes with a 1-year manufacturer warranty and optional extended protection plans available."
+    },
+    {
+      "name": "SmartPhone X Pro",
+      "category": "products",
+      "description": "The SmartPhone X Pro features a 6.7-inch Super AMOLED display with 120Hz refresh rate, triple camera system with 108MP main sensor, 12GB RAM, and 256GB storage. 5G enabled with all-day battery life and fast wireless charging. Water resistant (IP68 rating). Runs the latest Android OS with guaranteed 4 years of software updates. Available in Midnight Black, Ocean Blue, and Rose Gold. Includes USB-C cable and fast charger in the box."
+    },
+    {
+      "name": "Gaming Desktop Elite",
+      "category": "products",
+      "description": "Built for serious gamers, the Gaming Desktop Elite features an NVIDIA RTX 4080 graphics card, AMD Ryzen 9 processor, 64GB DDR5 RAM, 2TB NVMe SSD + 4TB HDD. RGB lighting throughout with tempered glass side panel. Advanced liquid cooling system keeps temperatures low during intense gaming sessions. Pre-installed with Windows 11 Pro. Supports 4K gaming at high frame rates. Includes gaming keyboard and mouse. Easy upgrade access with tool-less design."
+    },
+    {
+      "name": "4K Smart TV 65-inch",
+      "category": "products",
+      "description": "Experience stunning picture quality with our 65-inch 4K Smart TV. Features QLED technology, HDR10+ support, and a 120Hz refresh rate perfect for sports and gaming. Built-in streaming apps including Netflix, Hulu, Prime Video, and Disney+. Voice control compatible with Alexa and Google Assistant. Four HDMI 2.1 ports and three USB ports. Ultra-slim bezel design with included wall mount hardware. Energy Star certified. 2-year manufacturer warranty."
+    },
+    {
+      "name": "Wireless Noise-Canceling Headphones",
+      "category": "products",
+      "description": "Premium wireless headphones with industry-leading active noise cancellation. 40mm drivers deliver rich, detailed sound across all frequencies. Battery life up to 30 hours with ANC on, 45 hours with ANC off. Quick charge feature provides 5 hours of playback from just 10 minutes of charging. Comfortable memory foam ear cushions perfect for all-day wear. Folds flat for easy travel. Includes carrying case, 3.5mm aux cable, and USB-C charging cable. Available in Black, Silver, and Navy."
+    },
+    {
+      "name": "Wireless Charging Pad",
+      "category": "products",
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Delivers up to 15W fast charging for compatible phones. Non-slip surface keeps devices secure while charging. LED indicator shows charging status. Built-in safety features prevent overheating and overcharging. Slim design looks great on any desk or nightstand. Includes power adapter and 6-foot cable. Works through most phone cases up to 5mm thick. One-year warranty."
+    },
+    {
+      "name": "Portable SSD 2TB",
+      "category": "products",
+      "description": "Ultra-fast portable SSD with read speeds up to 1050MB/s. Perfect for photographers, videographers, and anyone who needs reliable portable storage. USB-C 3.2 Gen 2 connection with included USB-C to USB-A adapter. Shock-resistant solid-state design with no moving parts. Compact aluminum design fits in your pocket. Compatible with Windows, Mac, Android, and gaming consoles. Includes backup software and 256-bit AES encryption. 5-year limited warranty."
+    },
+    {
+      "name": "Mechanical Gaming Keyboard",
+      "category": "products",
+      "description": "Professional-grade mechanical keyboard with customizable RGB backlighting. Features Cherry MX Red switches for smooth, responsive keystrokes. Full N-key rollover and anti-ghosting ensure every press registers. Dedicated media controls and programmable macro keys. Detachable braided cable for easy transport. Includes magnetic wrist rest for comfortable extended gaming sessions. Aluminum frame construction. Compatible with Windows and Mac. Software allows full customization of lighting and macros."
+    },
+    {
+      "name": "Webcam Pro 4K",
+      "category": "products",
+      "description": "Professional 4K webcam perfect for remote work, streaming, and content creation. Sony sensor provides excellent low-light performance. Autofocus and auto light correction ensure you always look your best. 90-degree field of view captures more of your space. Built-in dual microphones with noise reduction. Privacy shutter protects when not in use. Compatible with all major video conferencing platforms. Adjustable clip fits any monitor or laptop. USB plug-and-play, no drivers required."
+    },
+    {
+      "name": "Smart Home Hub",
+      "category": "products",
+      "description": "Central control hub for all your smart home devices. Compatible with over 1000 smart home brands and devices. Built-in voice assistant works with Alexa and Google. 7-inch touchscreen display shows camera feeds, weather, and calendar. Create custom automation routines. Works with smart lights, locks, thermostats, cameras, and more. Connects via WiFi, Zigbee, and Z-Wave. Includes wall mount and tabletop stand. Simple setup through mobile app."
+    },
+    {
+      "name": "Fitness Smartwatch",
+      "category": "products",
+      "description": "Advanced fitness smartwatch with heart rate monitoring, GPS tracking, and sleep analysis. Track over 100 workout types including running, cycling, swimming (water resistant to 50m), and yoga. Battery life up to 14 days on a single charge. Receive notifications, calls, and texts right on your wrist. Bright AMOLED display visible in sunlight. Includes multiple watch faces and interchangeable bands. Compatible with iOS and Android. Syncs with popular fitness apps."
+    },
+    {
+      "name": "Tablet Pro 12-inch",
+      "category": "products",
+      "description": "Versatile tablet with 12.9-inch Liquid Retina display, perfect for work and entertainment. Powered by our latest chip with desktop-class performance. Support for stylus input (sold separately) makes it ideal for artists and note-taking. 8GB RAM and up to 512GB storage. Four speakers provide immersive audio. Compatible with keyboard case (sold separately) transforms it into a laptop replacement. All-day battery life. USB-C port supports external displays and accessories."
+    },
+    {
+      "name": "WiFi 6 Mesh Router System",
+      "category": "products",
+      "description": "Whole-home WiFi 6 mesh system covers up to 6000 square feet. Three-pack provides seamless coverage with no dead zones. Speeds up to 3Gbps handle 4K streaming, gaming, and video calls simultaneously. Setup in minutes with mobile app. Parental controls and guest network included. Automatic firmware updates keep your network secure. Six ethernet ports for wired connections. Works with any internet service provider. Three-year warranty."
+    },
+    {
+      "name": "Bluetooth Speaker Waterproof",
+      "category": "products",
+      "description": "Rugged portable Bluetooth speaker built for outdoor adventures. IP67 waterproof and dustproof rating. 360-degree sound with deep bass. Battery lasts up to 24 hours on a single charge. Connects to two devices simultaneously. Built-in power bank can charge your phone. Carabiner attachment clips to backpacks. Connects with additional speakers for stereo sound. Available in five colors. One-year warranty covers water damage."
+    },
+    {
+      "name": "External DVD Writer",
+      "category": "products",
+      "description": "Slim external DVD/CD writer for laptops and desktops without optical drives. Reads and writes all DVD and CD formats including DVD-RW, CD-RW, and more. USB 3.0 connection provides fast data transfer. No external power needed, powered by USB. Plug and play compatible with Windows and Mac. Perfect for backing up data, installing software, or watching movies. Includes CyberLink media software. Compact design easily fits in laptop bags."
+    }
+  ]
+}

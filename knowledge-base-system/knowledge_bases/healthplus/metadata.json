@@ -1,0 +1,13 @@
+{
+  "company_id": "healthplus",
+  "company_name": "HealthPlus",
+  "description": "Comprehensive healthcare services with focus on patient-centered care",
+  "active": true,
+  "categories": ["appointments", "insurance", "billing", "services", "emergency"],
+  "contact": {
+    "email": "support@healthplus.com",
+    "phone": "1-800-HEALTH-1",
+    "emergency": "911 or visit nearest ER",
+    "hours": "24/7 Support Available"
+  }
+}
