@@ -1,0 +1,104 @@
+{
+  "faqs": [
+    {
+      "question": "How do I enroll in a course?",
+      "answer": "Browse our course catalog at edulearn.com, click on the course you're interested in, and click 'Enroll Now'. You can pay with credit card, PayPal, or financial aid if eligible. After enrollment, you'll immediately get access to the course materials. You can start learning right away at your own pace. For degree programs, you'll need to complete an application process which includes submitting transcripts and other required documents.",
+      "category": "enrollment"
+    },
+    {
+      "question": "Do you offer financial aid or payment plans?",
+      "answer": "Yes! We offer several options to make education affordable. Payment plans allow you to split course costs into monthly installments with no interest. Financial aid is available for eligible students in degree programs - complete the FAFSA to apply. We also offer scholarships based on merit and need. Corporate partnerships provide discounts for employees. Check with your employer about tuition reimbursement. Monthly subscription plans give unlimited access to our course library for one low price.",
+      "category": "payments"
+    },
+    {
+      "question": "What is your refund policy?",
+      "answer": "We offer a 14-day money-back guarantee for individual courses. If you're not satisfied, request a full refund within 14 days of enrollment with no questions asked. After 14 days, refunds are not available, but you have lifetime access to course materials. Subscription plans can be cancelled anytime - you'll have access through the end of your billing period. Degree program refunds follow academic calendar policies with prorated refunds based on withdrawal date. To request a refund, visit your account settings or contact student services.",
+      "category": "payments"
+    },
+    {
+      "question": "How long do I have access to course materials?",
+      "answer": "Most individual courses provide lifetime access. Once enrolled, you can access videos, reading materials, assignments, and resources forever at your own pace. You can stop and start anytime without losing access. Subscription-based courses are available while your subscription is active. Some professional certification courses have time limits (typically 6-12 months) to align with certification requirements. Access details are clearly stated on each course page before enrollment.",
+      "category": "courses"
+    },
+    {
+      "question": "Will I receive a certificate upon completion?",
+      "answer": "Yes! After completing all course requirements and passing assessments, you'll receive a certificate of completion. Certificates are digital and shareable on LinkedIn, in resumes, and with employers. Verified certificates (available for an additional fee) include identity verification and are more valued by employers. Professional certificates and specializations award credentials recognized in specific industries. Degree programs award official transcripts and diplomas. Certificates can be downloaded from your account dashboard.",
+      "category": "certificates"
+    },
+    {
+      "question": "Are courses self-paced or scheduled?",
+      "answer": "Most courses are self-paced, allowing you to learn on your own schedule. Access materials 24/7 and progress as quickly or slowly as needed. Some courses have suggested timelines to help you stay on track. Instructor-led courses have specific start dates and weekly deadlines for assignments. These courses include live sessions and scheduled office hours with instructors. Degree programs follow academic calendars with semester schedules. Course format is clearly indicated on the course page.",
+      "category": "courses"
+    },
+    {
+      "question": "What technical requirements do I need?",
+      "answer": "You'll need a computer, tablet, or smartphone with internet access. Recommended browsers are Chrome, Firefox, Safari, or Edge (latest versions). Some courses may require specific software which will be listed in course requirements. Mobile apps available for iOS and Android allow offline viewing of downloaded content. Webcam and microphone needed for courses with live sessions or proctored exams. Minimum internet speed of 5 Mbps recommended for video streaming. Closed captions available for accessibility.",
+      "category": "technical"
+    },
+    {
+      "question": "Can I access courses on my mobile device?",
+      "answer": "Absolutely! Our mobile apps for iOS and Android provide full access to course materials. Watch videos, read content, complete quizzes, and participate in discussions from your phone or tablet. Download videos for offline viewing when you don't have internet access. Your progress syncs automatically across all devices. Some interactive features work best on larger screens. Download the EduLearn app from the App Store or Google Play. Login with the same credentials you use on the website.",
+      "category": "technical"
+    },
+    {
+      "question": "Do you offer degrees or just certificates?",
+      "answer": "We offer both! Choose from individual courses, professional certificates, specializations, and full degree programs. Degree programs include Associate's, Bachelor's, and Master's degrees in business, technology, healthcare, and more. All degree programs are accredited and recognized by employers. Degrees typically take 18 months to 4 years depending on program and pace. Certificates and specializations can be completed in weeks or months. Many courses can apply toward degree requirements if you decide to pursue a degree later.",
+      "category": "certificates"
+    },
+    {
+      "question": "How do I contact my instructor?",
+      "answer": "For instructor-led courses, use the discussion forums to ask questions that benefit all students. Send private messages to instructors through the course messaging system. Instructors typically respond within 24-48 hours during weekdays. Many courses offer weekly office hours via video chat. For self-paced courses, community teaching assistants and peer support are available in discussion forums. Degree program students have dedicated academic advisors. Technical issues should be directed to our 24/7 support team.",
+      "category": "courses"
+    },
+    {
+      "question": "Can I get college credit for completing courses?",
+      "answer": "Select courses offer college credit through our partner institutions. Credit-eligible courses are clearly marked and require additional fees. You must pass a proctored exam to receive college credit. Credits can often transfer to other accredited institutions - check with your school's registrar. Our degree programs award credits that count toward degree completion. Professional certificates may qualify for continuing education credits in certain professions. American Council on Education (ACE) has reviewed and recommended credit for many courses.",
+      "category": "certificates"
+    },
+    {
+      "question": "What if I'm struggling with course material?",
+      "answer": "We're here to help! Use course discussion forums to ask questions and learn from peers. Review lecture notes and supplemental materials provided in resource sections. Many courses offer practice quizzes to reinforce learning. Contact your instructor or teaching assistant for clarification. Our tutoring services connect you with subject experts (fees may apply). Study groups can be formed through the student community. Slow down and review materials multiple times - you have lifetime access. Don't hesitate to reach out to student support for guidance.",
+      "category": "courses"
+    },
+    {
+      "question": "How are assignments and exams graded?",
+      "answer": "Grading methods vary by course. Multiple-choice quizzes are auto-graded with immediate feedback. Programming assignments are often auto-graded by testing your code. Peer-graded assignments are evaluated by fellow students using provided rubrics. Instructor-graded assignments receive detailed feedback within 7-10 days. Some courses require proctored exams using webcam monitoring. Final grades are calculated based on completion of all required assignments and exams. Grade breakdowns and requirements are listed in the course syllabus.",
+      "category": "courses"
+    },
+    {
+      "question": "Can I audit courses for free?",
+      "answer": "Yes! Many courses can be audited at no cost. Audit access includes video lectures and reading materials. However, graded assignments, quizzes, certificates, and some interactive features are not available when auditing. You can upgrade to full access anytime to unlock all features and earn a certificate. Some courses are completely free with full access to all materials. Check the course page for audit availability. Free trial periods are available for our subscription plans.",
+      "category": "enrollment"
+    },
+    {
+      "question": "How do I update my account information?",
+      "answer": "Log into your account and click on 'Settings' or 'Profile' to update personal information, email address, password, notification preferences, and payment methods. Changes to your email require verification of the new address. Update your learning preferences to get personalized course recommendations. Manage your subscription and billing information in the 'Payments' section. Privacy settings control who can see your profile and activity. You can download all your data or delete your account from account settings. Changes save automatically.",
+      "category": "technical"
+    },
+    {
+      "question": "Are courses taught by qualified instructors?",
+      "answer": "Absolutely! Our instructors are industry experts, university professors, and practitioners with real-world experience. All instructors undergo a rigorous selection process. Many hold advanced degrees and professional certifications in their fields. Course creators partner with leading companies and universities. Instructor bios and credentials are listed on each course page. Student ratings and reviews help ensure quality instruction. We continuously monitor course quality and student feedback to maintain high standards.",
+      "category": "courses"
+    },
+    {
+      "question": "Can I gift a course to someone?",
+      "answer": "Yes! Gift any course or subscription to friends, family, or colleagues. Select the 'Gift This Course' option on the course page. Enter the recipient's email and a personalized message. Pay for the course and we'll send them an email with redemption instructions. Gift recipients don't need an account until they redeem. Gifts never expire. Corporate bulk purchasing available for team training. Gift cards in various amounts are also available for recipients to choose their own courses.",
+      "category": "enrollment"
+    },
+    {
+      "question": "What languages are courses available in?",
+      "answer": "Courses are primarily in English, but we're expanding to other languages. Many popular courses have been translated into Spanish, French, German, Chinese, and Portuguese. Subtitle translations available for video content in 20+ languages. Filter search results by language in the course catalog. Language availability is shown on each course page. Our platform interface supports 30+ languages - change your language preference in settings. We're continuously adding more translated content based on demand.",
+      "category": "courses"
+    },
+    {
+      "question": "Do you offer group or corporate training?",
+      "answer": "Yes! EduLearn for Business provides enterprise solutions for corporate training. Group licenses offer discounted pricing for teams of 5 or more. Admin dashboards track employee progress and completion. Custom learning paths align with your company's goals. We can create custom courses specific to your organization. Dedicated account manager provides ongoing support. Integration with your LMS (Learning Management System) available. Contact our business team at business@edulearn.com for pricing and demos.",
+      "category": "enrollment"
+    },
+    {
+      "question": "How do I reset my password?",
+      "answer": "Click 'Forgot Password' on the login page. Enter your registered email address. We'll send you a password reset link - check your spam folder if you don't see it. Click the link and create a new password. Passwords must be at least 8 characters with letters and numbers. For security, the reset link expires after 24 hours. If you're still having trouble, contact support with your registered email address. Consider using a password manager to securely store your credentials. Enable two-factor authentication for additional security.",
+      "category": "technical"
+    }
+  ]
+}

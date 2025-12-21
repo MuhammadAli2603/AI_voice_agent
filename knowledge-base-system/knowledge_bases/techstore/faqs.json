@@ -1,0 +1,129 @@
+{
+  "faqs": [
+    {
+      "question": "How can I track my order?",
+      "answer": "You can track your order by logging into your account and clicking on 'Order History'. You'll see all your recent orders with tracking numbers. You can also track your order by entering your order number and email address on our Track Order page. Tracking information is typically available within 24 hours of shipment.",
+      "category": "orders"
+    },
+    {
+      "question": "What is your return policy?",
+      "answer": "We offer a 30-day return policy for most items. Products must be in original condition with all packaging and accessories. To initiate a return, log into your account, go to Order History, and click 'Return Item'. Refunds are processed within 5-7 business days after we receive the returned item. Shipping costs are non-refundable unless the item is defective.",
+      "category": "returns"
+    },
+    {
+      "question": "Do you offer free shipping?",
+      "answer": "Yes! We offer free standard shipping on orders over $50. Orders under $50 have a flat shipping rate of $5.99. Expedited shipping options are available at checkout for an additional fee. Free shipping typically takes 5-7 business days. Express shipping (2-3 days) is $12.99, and overnight shipping is $24.99.",
+      "category": "shipping"
+    },
+    {
+      "question": "How do I reset my account password?",
+      "answer": "To reset your password, click 'Forgot Password' on the login page. Enter your email address and we'll send you a password reset link. Click the link in the email and create a new password. Make sure your password is at least 8 characters long and includes numbers and letters. If you don't receive the email within 5 minutes, check your spam folder.",
+      "category": "technical_support"
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, Google Pay, and TechStore gift cards. We also offer financing through our partner Affirm for purchases over $200. All payments are processed securely using industry-standard encryption.",
+      "category": "orders"
+    },
+    {
+      "question": "Do you price match?",
+      "answer": "Yes! We offer price matching for identical items sold by authorized retailers. The item must be in stock at both stores. To request a price match, contact our customer service with the competitor's URL and product details. Price matching applies to the product price only, not including shipping or taxes. We do not match prices from auction sites or unauthorized resellers.",
+      "category": "products"
+    },
+    {
+      "question": "How long does delivery take?",
+      "answer": "Standard shipping takes 5-7 business days. Express shipping takes 2-3 business days. Overnight shipping delivers the next business day if ordered before 2 PM EST. Processing time is typically 1-2 business days before shipment. You'll receive a tracking number via email once your order ships. Delivery times may vary during peak seasons and holidays.",
+      "category": "shipping"
+    },
+    {
+      "question": "Can I cancel my order?",
+      "answer": "You can cancel your order within 1 hour of placing it by contacting customer service or through your account dashboard. After 1 hour, if the order hasn't shipped yet, contact our support team and we'll try to cancel it. If the order has already shipped, you'll need to wait to receive it and then initiate a return. Cancellations are processed immediately and refunds take 3-5 business days.",
+      "category": "orders"
+    },
+    {
+      "question": "What is your warranty policy?",
+      "answer": "All electronics come with the manufacturer's warranty, typically 1 year for most products. We also offer extended warranty plans at checkout that extend coverage up to 3 years. Extended warranties cover defects, malfunctions, and accidental damage. To file a warranty claim, contact us with your order number and description of the issue. Manufacturer warranties must be claimed through the manufacturer directly.",
+      "category": "products"
+    },
+    {
+      "question": "Do you have a customer loyalty program?",
+      "answer": "Yes! Join TechStore Rewards to earn 1 point for every dollar spent. Points can be redeemed for discounts on future purchases. Members get early access to sales, exclusive deals, and free shipping on all orders. You'll also receive a $10 welcome bonus when you sign up. Points never expire as long as you make a purchase at least once per year.",
+      "category": "orders"
+    },
+    {
+      "question": "How do I contact customer support?",
+      "answer": "You can reach our customer support team by phone at 1-800-TECH-HELP (Monday-Friday 9AM-8PM EST), by email at support@techstore.com, or through live chat on our website. Average response time for email is 24 hours. Live chat is available during business hours. For urgent issues, we recommend calling our phone support line.",
+      "category": "technical_support"
+    },
+    {
+      "question": "Can I change my shipping address after ordering?",
+      "answer": "You can change your shipping address within 1 hour of placing your order by contacting customer service immediately. After that, if the order hasn't shipped, we may still be able to update it. Once the package is in transit, address changes must be made through the shipping carrier using your tracking number. Always double-check your shipping address at checkout to avoid issues.",
+      "category": "shipping"
+    },
+    {
+      "question": "What should I do if my item is defective?",
+      "answer": "If you receive a defective item, contact us within 7 days of delivery. We'll provide a prepaid return label and ship a replacement at no cost. For defects discovered after 7 days, the manufacturer's warranty applies. Please have your order number, product details, and description of the defect ready when contacting support. We may ask for photos of the defect.",
+      "category": "returns"
+    },
+    {
+      "question": "Do you offer installation services?",
+      "answer": "Yes! We offer installation services for many products including TVs, home theater systems, and smart home devices. Installation fees vary by product and location. You can add installation service at checkout or contact us after purchase. Our certified technicians will schedule an appointment within 5-7 business days. Installation includes basic setup and testing.",
+      "category": "technical_support"
+    },
+    {
+      "question": "Can I reserve an item for in-store pickup?",
+      "answer": "Yes! Select 'Store Pickup' at checkout to reserve items at your local TechStore. You'll receive an email when your order is ready for pickup, typically within 2-4 hours. Items are held for 7 days. Bring your order confirmation email and valid ID to the pickup counter. Store pickup is free for all orders.",
+      "category": "orders"
+    },
+    {
+      "question": "What is your policy on open-box items?",
+      "answer": "Open-box items are products returned by customers in excellent condition. They're tested and certified to work like new, offered at 10-30% discount. All open-box items come with the same return policy and warranty as new items. Available quantities are limited. Open-box items are clearly marked on product pages with detailed condition descriptions.",
+      "category": "products"
+    },
+    {
+      "question": "How do I use a promo code?",
+      "answer": "Enter your promo code in the 'Promo Code' field at checkout before completing payment. Click 'Apply' to see the discount reflected in your order total. Promo codes cannot be combined with other offers unless specified. Some exclusions may apply. If your code isn't working, check the expiration date and terms and conditions.",
+      "category": "orders"
+    },
+    {
+      "question": "Do you offer student discounts?",
+      "answer": "Yes! Students can get 10% off on select products year-round. Verify your student status through our partner SheerID at checkout. You'll need a valid .edu email address or student ID. The discount applies to laptops, tablets, and software. Student discounts cannot be combined with other promotions.",
+      "category": "products"
+    },
+    {
+      "question": "What happens if my package is lost or stolen?",
+      "answer": "If your package shows as delivered but you didn't receive it, first check with neighbors and other household members. Contact the carrier using your tracking number to file a claim. If the package is confirmed lost or stolen, contact us within 7 days and we'll send a replacement or provide a refund. We may require a police report for stolen packages over $500.",
+      "category": "shipping"
+    },
+    {
+      "question": "Can I buy a gift card?",
+      "answer": "Yes! TechStore gift cards are available in amounts from $10 to $500. You can purchase physical cards in-store or digital cards online that are delivered via email instantly. Gift cards never expire and have no fees. They can be used online or in-store. Check your gift card balance on our website at any time.",
+      "category": "orders"
+    },
+    {
+      "question": "Do you offer trade-in for old devices?",
+      "answer": "Yes! Our trade-in program accepts smartphones, tablets, laptops, and gaming consoles. Get an instant quote on our website by answering a few questions about your device's condition. Ship your device for free using our prepaid label. Once received and verified, you'll receive a TechStore gift card within 5 business days. Trade-in values vary based on device model and condition.",
+      "category": "products"
+    },
+    {
+      "question": "What is your approach to sustainability?",
+      "answer": "TechStore is committed to sustainability. We offer free electronics recycling at all store locations. Our packaging uses recycled materials and is 100% recyclable. We partner with manufacturers who meet environmental standards. Carbon-neutral shipping is available at checkout. We also donate refurbished electronics to schools and nonprofits.",
+      "category": "products"
+    },
+    {
+      "question": "How do I leave a product review?",
+      "answer": "To leave a review, log into your account and go to Order History. Find the product you want to review and click 'Write a Review'. You can rate the product (1-5 stars) and write comments about your experience. Reviews are typically posted within 24-48 hours after moderation. Verified purchase reviews are marked with a special badge.",
+      "category": "technical_support"
+    },
+    {
+      "question": "Do you offer bulk ordering for businesses?",
+      "answer": "Yes! Our Business Solutions team can help with bulk orders for offices, schools, and organizations. Contact business@techstore.com for volume pricing and dedicated support. We offer flexible payment terms, custom configurations, and dedicated account managers for business customers. Minimum order quantities apply for volume discounts.",
+      "category": "orders"
+    },
+    {
+      "question": "Can I get technical support for products I purchased?",
+      "answer": "Yes! We offer free basic technical support for all products purchased from TechStore. Contact our tech support team by phone, email, or live chat. For advanced support, we offer Premium Support plans with screen sharing, priority assistance, and extended hours. Manufacturer technical support is also available for product-specific issues.",
+      "category": "technical_support"
+    }
+  ]
+}

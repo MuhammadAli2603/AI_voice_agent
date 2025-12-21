@@ -1,0 +1,12 @@
+{
+  "company_id": "techstore",
+  "company_name": "TechStore",
+  "description": "Leading electronics retailer specializing in computers, smartphones, and accessories",
+  "active": true,
+  "categories": ["orders", "shipping", "returns", "products", "technical_support"],
+  "contact": {
+    "email": "support@techstore.com",
+    "phone": "1-800-TECH-HELP",
+    "hours": "Monday-Friday 9AM-8PM EST"
+  }
+}

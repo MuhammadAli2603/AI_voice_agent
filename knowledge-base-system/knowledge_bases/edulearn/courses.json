@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "name": "Python for Beginners",
+      "category": "courses",
+      "description": "Learn Python programming from scratch with no prior coding experience required. This comprehensive course covers Python basics, data types, control structures, functions, and object-oriented programming. Build real projects including a calculator, web scraper, and data analysis tool. 40 hours of video content, hands-on exercises, quizzes, and a final capstone project. Lifetime access to materials. Certificate upon completion. Instructor support via discussion forums. Perfect for career changers and aspiring developers."
+    },
+    {
+      "name": "Data Science Professional Certificate",
+      "category": "courses",
+      "description": "Comprehensive 6-month program covering the full data science workflow. Learn Python, SQL, statistics, machine learning, data visualization, and big data tools. Work with real datasets from industry partners. Build a professional portfolio with 5+ projects. Includes courses on pandas, scikit-learn, TensorFlow, and data storytelling. Career services include resume review and interview prep. Verified certificate recognized by employers. Prerequisites: basic programming knowledge recommended but not required."
+    },
+    {
+      "name": "Web Development Bootcamp",
+      "category": "courses",
+      "description": "Full-stack web development bootcamp teaching HTML, CSS, JavaScript, React, Node.js, and databases. Build 15+ projects including responsive websites, web applications, and APIs. Learn modern development workflows with Git, GitHub, and deployment. 60 hours of content with coding challenges and peer code reviews. Capstone project involves building a full-featured web application from scratch. Job-ready skills for front-end, back-end, or full-stack developer positions. Certificate and portfolio upon completion."
+    },
+    {
+      "name": "Digital Marketing Masterclass",
+      "category": "courses",
+      "description": "Complete digital marketing course covering SEO, social media marketing, email marketing, content marketing, and paid advertising. Learn Google Analytics, Facebook Ads, Google Ads, and marketing automation tools. Real-world case studies and hands-on projects. Develop a comprehensive marketing strategy for a business. Taught by marketing professionals with Fortune 500 experience. 35 hours of content plus bonus resources. Certificate recognized by marketing industry. Great for entrepreneurs, marketing professionals, and career changers."
+    },
+    {
+      "name": "MBA Essentials",
+      "category": "courses",
+      "description": "Learn core MBA concepts without the cost or time commitment of a traditional MBA. Covers finance, accounting, strategy, marketing, operations, and leadership. Taught by business school professors from top universities. Case study method with analysis of real companies. 80 hours of content across 10 courses. Applicable to any industry or career stage. Network with global community of business professionals. Verified certificate upon completion. Can be applied toward our full online MBA program."
+    },
+    {
+      "name": "Graphic Design Fundamentals",
+      "category": "courses",
+      "description": "Master graphic design principles including typography, color theory, composition, and branding. Hands-on training with Adobe Photoshop, Illustrator, and InDesign. Create logos, posters, social media graphics, and marketing materials. Build a professional portfolio with 10+ design projects. Learn design thinking and client communication. Ideal for beginners with no prior design experience. 30 hours of video tutorials and design critiques. Certificate and downloadable design resources included."
+    },
+    {
+      "name": "Project Management Professional (PMP) Prep",
+      "category": "courses",
+      "description": "Comprehensive PMP certification exam preparation aligned with PMBOK Guide 7th Edition. Covers all process groups and knowledge areas. 35 contact hours meet PMI eligibility requirements. Practice exams with 1000+ questions. Exam-taking strategies and time management techniques. Taught by certified PMP instructors. Includes study guide, flashcards, and formula sheet. 95% pass rate among students who complete the course. Certificate of completion provided for PMI application."
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "category": "courses",
+      "description": "Deep dive into machine learning algorithms and applications. Learn supervised learning, unsupervised learning, neural networks, and deep learning. Implement algorithms using Python, NumPy, and scikit-learn. Projects include image recognition, recommendation systems, and natural language processing. Taught by AI researchers and practitioners. Mathematical concepts explained clearly with practical examples. 50 hours across 5 courses. Prerequisites: Python programming and basic statistics. Verified specialization certificate upon completion."
+    },
+    {
+      "name": "Excel for Business Analytics",
+      "category": "courses",
+      "description": "Master Microsoft Excel for business analysis and decision-making. Learn advanced formulas, pivot tables, data visualization, macros, and Power Query. Create interactive dashboards and automated reports. Real business datasets and scenarios. No prior Excel experience required - starts with basics and progresses to advanced. 25 hours of hands-on exercises. Downloadable templates and practice files. Certificate upon completion. Valuable skill for any business role."
+    },
+    {
+      "name": "Cloud Computing with AWS",
+      "category": "courses",
+      "description": "Learn Amazon Web Services (AWS) cloud platform from beginner to advanced. Covers EC2, S3, Lambda, RDS, CloudFormation, and more. Prepare for AWS Certified Solutions Architect exam. Hands-on labs with real AWS environment. Build scalable cloud applications and infrastructure. Security best practices and cost optimization strategies. 40 hours of content with quiz assessments. Taught by AWS certified instructors. Certificate and exam voucher included. High demand skill for IT professionals."
+    },
+    {
+      "name": "UX/UI Design Certificate",
+      "category": "courses",
+      "description": "Comprehensive user experience and interface design program. Learn user research, wireframing, prototyping, usability testing, and visual design. Master tools including Figma, Sketch, and Adobe XD. Portfolio of 5 UX projects ready to show employers. Covers mobile and web design. Design thinking methodology and agile UX. Peer feedback and instructor critiques. 45 hours across 6 courses. Perfect for career switchers and designers expanding skills. Industry-recognized certificate."
+    },
+    {
+      "name": "Cybersecurity Fundamentals",
+      "category": "courses",
+      "description": "Introduction to cybersecurity covering threats, vulnerabilities, and security controls. Learn network security, cryptography, ethical hacking, and incident response. Hands-on labs in virtual environment. Security tools including Wireshark, Nmap, and Metasploit. Prepare for CompTIA Security+ certification. Career paths in cybersecurity explored. 35 hours of content. No prior security knowledge needed. Certificate upon completion. Growing field with high-paying job opportunities."
+    }
+  ]
+}

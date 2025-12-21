@@ -1,0 +1,54 @@
+{
+  "services": [
+    {
+      "name": "Primary Care",
+      "category": "services",
+      "description": "Comprehensive primary care services for adults and families. Our board-certified physicians and nurse practitioners provide preventive care, chronic disease management, acute illness treatment, and health screenings. Services include annual physicals, immunizations, wellness exams, and management of conditions like diabetes, hypertension, and asthma. We coordinate with specialists when needed and serve as your medical home for all healthcare needs. Accept new patients of all ages. Same-day appointments available for urgent issues."
+    },
+    {
+      "name": "Urgent Care",
+      "category": "services",
+      "description": "Walk-in urgent care for non-life-threatening medical issues. No appointment necessary. Treat minor injuries, sprains, fractures, cuts requiring stitches, burns, infections, cold and flu, allergic reactions, and more. On-site X-rays and lab work available. Open 8 AM to 8 PM daily including weekends and holidays. Most insurance accepted. More affordable than emergency room visits. Average wait time under 30 minutes. Certified urgent care physicians on staff."
+    },
+    {
+      "name": "Telehealth Visits",
+      "category": "services",
+      "description": "Virtual healthcare from the comfort of your home. Connect with providers via secure video chat for many common conditions including cold, flu, sinus infections, skin rashes, allergies, medication refills, mental health counseling, and follow-up appointments. Download our mobile app or access through the patient portal. Insurance coverage same as in-person visits. Appointments available within hours, often same-day. Prescriptions sent electronically to your pharmacy. Perfect for busy schedules or mobility challenges."
+    },
+    {
+      "name": "Women's Health",
+      "category": "services",
+      "description": "Complete women's healthcare across all life stages. Services include annual gynecological exams, Pap smears, breast exams, mammograms, contraception counseling, prenatal care, delivery services, menopause management, and fertility consultations. Board-certified OB/GYN physicians and certified nurse midwives on staff. Confidential services in a comfortable, supportive environment. Advanced screening and diagnostic services. High-risk pregnancy specialists available."
+    },
+    {
+      "name": "Pediatric Care",
+      "category": "services",
+      "description": "Healthcare for infants, children, and adolescents up to age 18. Board-certified pediatricians provide well-child visits, immunizations, developmental screenings, sports physicals, sick visits, and management of childhood conditions. Kid-friendly offices with play areas. Same-day sick appointments typically available. After-hours nurse advice line for parents. Comprehensive care from newborn through teenage years. Specialists available for complex conditions."
+    },
+    {
+      "name": "Behavioral Health",
+      "category": "services",
+      "description": "Comprehensive mental health and substance abuse services. Licensed psychiatrists, psychologists, therapists, and counselors treat depression, anxiety, PTSD, bipolar disorder, addiction, and more. Individual therapy, family therapy, group therapy, and psychiatric medication management available. Telehealth and in-person options. Crisis intervention and same-day urgent mental health appointments. Accept most insurance. Confidential services in a supportive environment. Integrated with primary care for whole-person health."
+    },
+    {
+      "name": "Cardiology",
+      "category": "services",
+      "description": "Advanced heart and vascular care from board-certified cardiologists. Diagnose and treat heart disease, arrhythmias, heart failure, high blood pressure, high cholesterol, and more. Services include EKG, echocardiogram, stress testing, cardiac catheterization, and electrophysiology studies. Preventive cardiology and cardiac rehabilitation programs. Manage chronic conditions and provide pre-surgical clearances. State-of-the-art diagnostic equipment. Emergency cardiology services available."
+    },
+    {
+      "name": "Orthopedics",
+      "category": "services",
+      "description": "Expert care for bone, joint, and muscle conditions. Board-certified orthopedic surgeons and sports medicine specialists treat fractures, arthritis, sports injuries, back pain, joint pain, and more. Services include X-rays, MRI, joint injections, physical therapy, and surgical procedures. Specialties include spine care, joint replacement, hand surgery, and foot/ankle care. On-site imaging and therapy for coordinated care. Most insurance accepted."
+    },
+    {
+      "name": "Imaging Services",
+      "category": "services",
+      "description": "Comprehensive diagnostic imaging with board-certified radiologists. Services include X-ray, CT scan, MRI, ultrasound, mammography, DEXA bone density scans, and more. Advanced equipment provides high-quality images for accurate diagnosis. Most locations offer same-day appointments. Results typically available within 24-48 hours and posted to patient portal. Comfortable facilities with compassionate technologists. Accept most insurance plans."
+    },
+    {
+      "name": "Laboratory Services",
+      "category": "services",
+      "description": "Full-service clinical laboratory providing blood work, urinalysis, cultures, genetic testing, and specialized diagnostic tests. CLIA-certified labs at most locations. Walk-in service - no appointment needed for most tests. Experienced phlebotomists including pediatric specialists. Rapid results for urgent tests. Standard results within 24-48 hours in patient portal. Send results to any physician upon request. Competitive self-pay pricing available."
+    }
+  ]
+}

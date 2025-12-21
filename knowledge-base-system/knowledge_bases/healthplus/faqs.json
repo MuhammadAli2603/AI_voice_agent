@@ -1,0 +1,159 @@
+{
+  "faqs": [
+    {
+      "question": "How do I schedule an appointment?",
+      "answer": "You can schedule an appointment through our patient portal at healthplus.com, by calling our scheduling line at 1-800-HEALTH-1, or using our mobile app. Our online scheduling system is available 24/7 and shows real-time availability. You can also request same-day appointments by calling our office. For your first visit, please arrive 15 minutes early to complete registration paperwork.",
+      "category": "appointments"
+    },
+    {
+      "question": "What insurance plans do you accept?",
+      "answer": "HealthPlus accepts most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna, United Healthcare, Medicare, and Medicaid. We are in-network with over 50 insurance carriers. To verify your specific plan coverage, call our insurance verification team at 1-800-HEALTH-1 ext. 2 or check your insurance card and policy documents. We also accept self-pay patients and offer payment plans.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I see a doctor via telehealth?",
+      "answer": "Yes! HealthPlus offers telehealth appointments for many non-emergency conditions including cold and flu symptoms, allergies, skin conditions, mental health counseling, and follow-up visits. Telehealth visits are conducted via secure video chat through our patient portal or mobile app. Most insurance plans cover telehealth at the same rate as in-person visits. Schedule a telehealth appointment the same way you would an office visit.",
+      "category": "appointments"
+    },
+    {
+      "question": "How do I access my medical records?",
+      "answer": "Access your complete medical records through our secure patient portal. Log in with your username and password to view test results, visit summaries, medications, immunization records, and more. You can also request paper copies of your records by submitting a medical records release form. For records older than 7 years, processing may take 7-10 business days. There's no charge for electronic access, but printed records may have a nominal copying fee.",
+      "category": "services"
+    },
+    {
+      "question": "What should I do in a medical emergency?",
+      "answer": "For life-threatening emergencies, call 911 immediately or go to the nearest emergency room. Examples include chest pain, difficulty breathing, severe bleeding, loss of consciousness, or suspected stroke. For urgent but non-life-threatening issues, visit one of our Urgent Care locations - open 8 AM to 8 PM daily with no appointment needed. Our 24/7 nurse advice line at 1-800-HEALTH-1 can help you determine the appropriate level of care.",
+      "category": "emergency"
+    },
+    {
+      "question": "How do I pay my medical bill?",
+      "answer": "Pay your bill online through the patient portal, by phone at 1-800-HEALTH-1 ext. 3, by mail, or in person at any HealthPlus location. We accept credit cards, debit cards, checks, and cash. If you need financial assistance, we offer payment plans with no interest for up to 12 months. You can also apply for our financial assistance program if you meet income requirements. Bills are typically sent 30 days after your visit.",
+      "category": "billing"
+    },
+    {
+      "question": "Do I need a referral to see a specialist?",
+      "answer": "Referral requirements depend on your insurance plan. Most HMO plans require a referral from your primary care physician before seeing a specialist. PPO plans typically don't require referrals but may have lower copays with one. Check your insurance card or call your insurance company to confirm. Your primary care doctor can provide referrals during your visit or through the patient portal message system.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I refill my prescription?",
+      "answer": "Request prescription refills through the patient portal, by calling your pharmacy directly, or by contacting your doctor's office. Most refill requests are processed within 24-48 hours. For faster service, ensure your pharmacy information is up to date in our system. If you haven't refilled in over a year, you may need an appointment to renew the prescription. Set up automatic refills for maintenance medications through your pharmacy.",
+      "category": "services"
+    },
+    {
+      "question": "What COVID-19 services do you offer?",
+      "answer": "HealthPlus provides COVID-19 testing, vaccinations, and treatment for eligible patients. Testing is available at all locations with results typically within 24-48 hours. Rapid tests are available at Urgent Care locations with results in 15 minutes. COVID-19 vaccines and boosters are free with most insurance plans. Treatment for COVID-19 is available through in-person or telehealth visits. Call ahead before visiting if you have COVID-19 symptoms.",
+      "category": "services"
+    },
+    {
+      "question": "Can I change my primary care physician?",
+      "answer": "Yes, you can change your primary care physician at any time. Log into the patient portal and update your PCP in the profile section, or call our customer service team for assistance. If you have an HMO plan, contact your insurance company as well to update your PCP with them. The change typically takes effect immediately, though your insurance may have different processing times. Your medical records will transfer to your new PCP within our system.",
+      "category": "appointments"
+    },
+    {
+      "question": "Do you offer mental health services?",
+      "answer": "Yes, HealthPlus has a comprehensive behavioral health program including psychiatry, psychology, counseling, and therapy services. We treat anxiety, depression, PTSD, addiction, and other mental health conditions. Services are available in-person and via telehealth. Most insurance plans cover mental health services. Same-day crisis appointments are available for urgent mental health needs. Call our behavioral health line at 1-800-HEALTH-1 ext. 5 to schedule.",
+      "category": "services"
+    },
+    {
+      "question": "What are your office hours?",
+      "answer": "Primary care offices are open Monday-Friday 8 AM to 5 PM, with select locations offering evening hours until 7 PM and Saturday hours 9 AM to 1 PM. Urgent Care centers are open 8 AM to 8 PM every day including weekends and holidays. Specialty clinics have varying hours - check specific locations on our website. Our 24/7 nurse advice line is always available. The patient portal and telehealth services are accessible anytime.",
+      "category": "appointments"
+    },
+    {
+      "question": "How do I prepare for my appointment?",
+      "answer": "Arrive 15 minutes early to check in. Bring your insurance card, photo ID, and a list of current medications including dosages. Write down any symptoms, questions, or concerns you want to discuss. For new patients, complete registration forms online beforehand through the patient portal. For lab work, fasting may be required - your doctor's office will advise you. Bring a family member or friend if needed for support or transportation after certain procedures.",
+      "category": "appointments"
+    },
+    {
+      "question": "Do you offer preventive care services?",
+      "answer": "Yes, HealthPlus emphasizes preventive care including annual physical exams, immunizations, cancer screenings, wellness visits, and health risk assessments. Most preventive services are covered 100% by insurance with no copay under the Affordable Care Act. We offer mammograms, colonoscopies, blood pressure screening, cholesterol testing, diabetes screening, and more. Schedule your annual wellness visit to stay up-to-date on all recommended preventive care.",
+      "category": "services"
+    },
+    {
+      "question": "Can family members attend my appointment?",
+      "answer": "Yes, you may bring family members or friends to your appointment for support. Due to space limitations in exam rooms, we ask that you limit guests to one or two people when possible. For pediatric appointments, we encourage parent or guardian presence. For behavioral health appointments, your therapist will discuss who should attend. If you want family involved in your care decisions, we can provide a HIPAA authorization form.",
+      "category": "appointments"
+    },
+    {
+      "question": "What if I need to cancel my appointment?",
+      "answer": "Cancel or reschedule appointments through the patient portal, mobile app, or by calling the office at least 24 hours in advance. Last-minute cancellations or no-shows may result in a $25-50 fee depending on appointment type. We understand emergencies happen - contact us as soon as possible if you can't make your appointment. Repeated no-shows may affect your ability to schedule future appointments. Same-day cancellations for illness are generally excused.",
+      "category": "appointments"
+    },
+    {
+      "question": "Are my test results available online?",
+      "answer": "Yes, most test results are posted to your patient portal within 24-48 hours of completion. You'll receive an email notification when new results are available. Your doctor will contact you about abnormal results that require follow-up. You can view lab results, imaging reports, pathology reports, and more. Results include normal reference ranges for comparison. If you have questions about your results, message your doctor through the portal or call the office.",
+      "category": "services"
+    },
+    {
+      "question": "Do you offer women's health services?",
+      "answer": "HealthPlus provides comprehensive women's health care including annual exams, Pap smears, mammograms, prenatal care, family planning, menopause management, and gynecological services. We have board-certified OB/GYN specialists at multiple locations. Midwife services and doula support are also available for pregnancy care. We offer confidential services for all women regardless of age. Schedule with our women's health department at 1-800-HEALTH-1 ext. 4.",
+      "category": "services"
+    },
+    {
+      "question": "What pediatric services are available?",
+      "answer": "Our pediatric department cares for children from birth through age 18. Services include well-child visits, immunizations, sick visits, sports physicals, developmental screenings, and management of chronic conditions like asthma and ADHD. We have pediatric specialists including pediatric dentistry, cardiology, and behavioral health. Same-day sick appointments are usually available. Our kid-friendly waiting areas help children feel comfortable during visits.",
+      "category": "services"
+    },
+    {
+      "question": "How does your pharmacy work?",
+      "answer": "HealthPlus pharmacies are located within many of our medical centers for your convenience. We fill prescriptions from any doctor, not just HealthPlus providers. We accept all major insurance plans and offer competitive cash prices. Pharmacists provide medication counseling, immunizations, and medication therapy management. Home delivery is available for maintenance medications. Transfer prescriptions from other pharmacies easily by calling our pharmacy or using the patient portal.",
+      "category": "services"
+    },
+    {
+      "question": "What should I bring to my first appointment?",
+      "answer": "For your first visit, bring your insurance card, photo ID, a list of current medications and dosages, medical history including surgeries and hospitalizations, family medical history, and any relevant medical records from previous doctors. Complete new patient registration forms online before your visit to save time. Arrive 15 minutes early for check-in. Bring payment for any applicable copay or deductible. If you have specific concerns, write them down to discuss with your doctor.",
+      "category": "appointments"
+    },
+    {
+      "question": "Do you offer nutrition and weight management services?",
+      "answer": "Yes, HealthPlus has registered dietitians who provide nutrition counseling for weight management, diabetes, heart disease, food allergies, and other conditions. We offer medically supervised weight loss programs, bariatric surgery consultations, and ongoing support. Many insurance plans cover nutrition counseling with a doctor's referral. Individual and group sessions are available. Our wellness program includes fitness counseling and lifestyle coaching. Call 1-800-HEALTH-1 ext. 6 to learn more.",
+      "category": "services"
+    },
+    {
+      "question": "How do I appeal an insurance denial?",
+      "answer": "If your insurance denies coverage for a service, you have the right to appeal. Contact our billing department and we'll help you through the process. We can provide medical records and documentation to support your appeal. Your doctor may need to write a letter of medical necessity. Submit appeals within the timeframe specified in your denial letter (usually 30-60 days). You can also contact your insurance company's member services for their appeal process. Our patient advocates can assist with complex cases.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are interpreters available for appointments?",
+      "answer": "Yes, HealthPlus provides free interpreter services for patients who speak languages other than English or who are deaf or hard of hearing. Request an interpreter when scheduling your appointment or at least 48 hours in advance. We have staff interpreters for common languages and contract with professional interpretation services for others. Video remote interpreting and sign language interpreters are available. All interpreters are trained in medical terminology and patient confidentiality.",
+      "category": "appointments"
+    },
+    {
+      "question": "What is your patient privacy policy?",
+      "answer": "HealthPlus is committed to protecting your health information privacy in compliance with HIPAA regulations. We only share your medical information with healthcare providers involved in your care, insurance companies for billing, and as required by law. You control who else can access your information through HIPAA authorization forms. Our patient portal uses encryption and secure login. You have the right to access your records, request corrections, and receive an accounting of disclosures. Review our full privacy policy at healthplus.com/privacy.",
+      "category": "services"
+    },
+    {
+      "question": "Do you offer physical therapy?",
+      "answer": "Yes, HealthPlus has physical therapy clinics throughout our service area staffed by licensed physical therapists. We treat sports injuries, post-surgical rehabilitation, chronic pain, balance disorders, and more. Services include manual therapy, therapeutic exercise, and specialized treatments. Most insurance plans cover physical therapy with a referral. Appointments are typically 45-60 minutes. We also offer occupational therapy and speech therapy. Call 1-800-HEALTH-1 ext. 7 to schedule an evaluation.",
+      "category": "services"
+    },
+    {
+      "question": "Can I get my imaging done at HealthPlus?",
+      "answer": "Yes, HealthPlus offers comprehensive imaging services including X-rays, CT scans, MRI, ultrasound, and mammography at our imaging centers. Most locations have on-site radiology for your convenience. Same-day appointments are often available. Board-certified radiologists read all images. Results are typically available within 24-48 hours and posted to your patient portal. Most insurance plans are accepted. We offer competitive self-pay rates for uninsured patients. Preparation instructions will be provided when you schedule.",
+      "category": "services"
+    },
+    {
+      "question": "What lab services do you provide?",
+      "answer": "HealthPlus has full-service laboratories at most locations offering blood work, urine tests, cultures, genetic testing, and more. Lab hours are typically 7 AM to 5 PM Monday-Friday and 8 AM to 12 PM Saturday. Most lab work doesn't require an appointment - just walk in with your doctor's order. Fasting may be required for some tests. Results are available in the patient portal usually within 24-48 hours. We can send results to outside doctors upon request. Phlebotomists are experienced in working with children and difficult draws.",
+      "category": "services"
+    },
+    {
+      "question": "Do you have a patient satisfaction guarantee?",
+      "answer": "HealthPlus is committed to excellent patient care and satisfaction. If you're not satisfied with any aspect of your care, please let us know immediately. Contact our patient relations department at patientrelations@healthplus.com or 1-800-HEALTH-1 ext. 9. We take all feedback seriously and investigate concerns promptly. While we can't guarantee specific medical outcomes, we promise to listen to your concerns and work toward resolution. Patient satisfaction surveys are sent after visits - your feedback helps us improve.",
+      "category": "services"
+    },
+    {
+      "question": "How do I access care after hours?",
+      "answer": "For after-hours medical needs, call our 24/7 nurse advice line at 1-800-HEALTH-1. A registered nurse will assess your symptoms and recommend appropriate care. For urgent issues, visit one of our Urgent Care centers (open 8 AM-8 PM daily). For emergencies, call 911 or go to the nearest ER. Our on-call providers can be reached through the answering service for established patients with urgent needs. The patient portal message system is monitored regularly, though not for urgent issues.",
+      "category": "emergency"
+    },
+    {
+      "question": "What vaccinations do you offer?",
+      "answer": "HealthPlus provides all recommended vaccines for children and adults including flu shots, COVID-19 vaccines, shingles vaccines, pneumonia vaccines, travel vaccines, and more. Vaccines are available at primary care offices, pediatric offices, and pharmacies. Most insurance plans cover preventive vaccines at no cost. Walk-in flu shots are available during flu season. Schedule other vaccines through your doctor's office or pharmacy. We maintain electronic immunization records accessible through your patient portal.",
+      "category": "services"
+    }
+  ]
+}

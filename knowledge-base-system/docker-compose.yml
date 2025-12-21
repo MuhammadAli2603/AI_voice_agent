@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  knowledge-base:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: knowledge-base-system
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=False
+      - LOG_LEVEL=INFO
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      # Mount indexes and logs for persistence
+      - ./indexes:/app/indexes
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+      # Optional: Mount knowledge bases for easy updates
+      - ./knowledge_bases:/app/knowledge_bases:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - kb-network
+    # Resource limits (adjust based on your needs)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+
+  # Optional: Redis for caching (uncomment if needed)
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: knowledge-base-redis
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis-data:/data
+  #   restart: unless-stopped
+  #   networks:
+  #     - kb-network
+
+networks:
+  kb-network:
+    driver: bridge
+
+# Optional: Persistent volume for Redis
+# volumes:
+#   redis-data:

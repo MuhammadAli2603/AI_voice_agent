@@ -1,0 +1,25 @@
+{
+  "companies": [
+    {
+      "company_id": "techstore",
+      "company_name": "TechStore",
+      "description": "Electronics Retailer",
+      "active": true,
+      "categories": ["orders", "shipping", "returns", "products", "technical_support"]
+    },
+    {
+      "company_id": "healthplus",
+      "company_name": "HealthPlus",
+      "description": "Healthcare Service",
+      "active": true,
+      "categories": ["appointments", "insurance", "billing", "services", "emergency"]
+    },
+    {
+      "company_id": "edulearn",
+      "company_name": "EduLearn",
+      "description": "Online Education",
+      "active": true,
+      "categories": ["enrollment", "courses", "payments", "technical", "certificates"]
+    }
+  ]
+}
