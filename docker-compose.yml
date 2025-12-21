@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  voice-agent:
+    build: .
+    container_name: ai-voice-agent
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DEBUG=True
+      - DEVICE=cpu
+      - STT_MODEL=openai/whisper-base
+      - LLM_MODEL=microsoft/DialoGPT-medium
+      - TTS_MODEL=tts_models/en/ljspeech/tacotron2-DDC
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./logs:/app/logs
+      - model-cache:/root/.cache
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  model-cache:
+    driver: local
