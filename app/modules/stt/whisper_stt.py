@@ -110,16 +110,25 @@ class WhisperSTT(BaseSTT):
             
             elif response.status_code == 503:
                 log.warning("Model is loading... This may take a minute on first use")
-                error_msg = response.json().get("error", "Model loading")
+                try:
+                    error_msg = response.json().get("error", "Model loading")
+                except:
+                    error_msg = "Model loading"
                 return {
                     "text": f"[Model Loading: {error_msg}]",
                     "confidence": None
                 }
-            
+
             else:
-                error_msg = response.json().get("error", response.text)
+                # Try to parse error message
+                try:
+                    error_data = response.json()
+                    error_msg = error_data.get("error", response.text)
+                except:
+                    error_msg = response.text[:500]  # First 500 chars of response
+
                 log.error(f"API Error ({response.status_code}): {error_msg}")
-                raise Exception(f"API Error: {error_msg}")
+                raise Exception(f"API Error ({response.status_code}): {error_msg}")
             
         except requests.exceptions.Timeout:
             log.error("API request timed out")

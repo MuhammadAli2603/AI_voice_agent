@@ -22,6 +22,9 @@ class Settings:
         # Hugging Face API
         self.huggingface_api_key: str = os.getenv("HUGGINGFACE_API_KEY", "")
 
+        # Knowledge Base Integration
+        self.kb_service_url: str = os.getenv("KB_SERVICE_URL", "http://localhost:8001")
+
         # Models (Hugging Face Model IDs)
         self.stt_model: str = os.getenv("STT_MODEL", "openai/whisper-large-v3")
         self.llm_model: str = os.getenv("LLM_MODEL", "microsoft/DialoGPT-medium")
@@ -52,6 +55,7 @@ class Settings:
             "host": self.host,
             "port": self.port,
             "debug": self.debug,
+            "kb_service_url": self.kb_service_url,
             "stt_model": self.stt_model,
             "llm_model": self.llm_model,
             "tts_model": self.tts_model,

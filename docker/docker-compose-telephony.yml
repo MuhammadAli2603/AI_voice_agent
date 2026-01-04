@@ -1,0 +1,187 @@
+version: '3.8'
+
+services:
+  #==============================================
+  # ASTERISK - Telephony System
+  #==============================================
+  asterisk:
+    image: andrius/asterisk:18
+    container_name: voice-agent-asterisk
+    restart: unless-stopped
+    ports:
+      - "5060:5060/udp"      # SIP UDP
+      - "5060:5060/tcp"      # SIP TCP
+      - "10000-10100:10000-10100/udp"  # RTP media
+    volumes:
+      - ./telephony/config/extensions.conf:/etc/asterisk/extensions.conf:ro
+      - asterisk-sounds:/var/lib/asterisk/sounds
+      - asterisk-logs:/var/log/asterisk
+    networks:
+      - voice-agent-net
+    environment:
+      - TZ=UTC
+
+  #==============================================
+  # REDIS - Session Storage
+  #==============================================
+  redis:
+    image: redis:7-alpine
+    container_name: voice-agent-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - voice-agent-net
+    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy allkeys-lru
+
+  #==============================================
+  # KNOWLEDGE BASE SERVICE
+  #==============================================
+  kb-service:
+    build:
+      context: ../knowledge-base-system
+      dockerfile: Dockerfile
+    container_name: voice-agent-kb
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    volumes:
+      - ../knowledge-base-system/knowledge_bases:/app/knowledge_bases:ro
+      - kb-indexes:/app/indexes
+    networks:
+      - voice-agent-net
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8001
+      - EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+      - GPU_ENABLED=false
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/api/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  #==============================================
+  # VOICE AGENT API
+  #==============================================
+  voice-agent:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: voice-agent-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../telephony:/app/telephony:ro
+      - voice-agent-logs:/app/logs
+      - /tmp/voice_agent:/tmp/voice_agent
+    networks:
+      - voice-agent-net
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - HUGGINGFACE_API_KEY=${HUGGINGFACE_API_KEY}
+      - KB_SERVICE_URL=http://kb-service:8001
+      - STT_MODEL=openai/whisper-large-v3
+      - LLM_MODEL=microsoft/DialoGPT-medium
+      - TTS_MODEL=facebook/mms-tts-eng
+      - LOG_LEVEL=INFO
+    depends_on:
+      - redis
+      - kb-service
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  #==============================================
+  # PROMETHEUS - Metrics Collection
+  #==============================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: voice-agent-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    networks:
+      - voice-agent-net
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+
+  #==============================================
+  # GRAFANA - Monitoring Dashboard
+  #==============================================
+  grafana:
+    image: grafana/grafana:latest
+    container_name: voice-agent-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    networks:
+      - voice-agent-net
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=
+    depends_on:
+      - prometheus
+
+  #==============================================
+  # NGINX - Reverse Proxy (Optional)
+  #==============================================
+  nginx:
+    image: nginx:alpine
+    container_name: voice-agent-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    networks:
+      - voice-agent-net
+    depends_on:
+      - voice-agent
+      - kb-service
+
+#==============================================
+# NETWORKS
+#==============================================
+networks:
+  voice-agent-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+#==============================================
+# VOLUMES
+#==============================================
+volumes:
+  asterisk-sounds:
+    driver: local
+  asterisk-logs:
+    driver: local
+  redis-data:
+    driver: local
+  kb-indexes:
+    driver: local
+  voice-agent-logs:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local

@@ -27,21 +27,24 @@ class VoiceAgentPipeline:
         stt_model: Optional[str] = None,
         llm_model: Optional[str] = None,
         tts_model: Optional[str] = None,
-        api_key: Optional[str] = None
+        api_key: Optional[str] = None,
+        kb_service_url: Optional[str] = None
     ):
         """
-        Initialize voice agent pipeline with API
-        
+        Initialize voice agent pipeline with API and KB integration
+
         Args:
             stt_model: STT model ID (defaults to config)
             llm_model: LLM model ID (defaults to config)
             tts_model: TTS model ID (defaults to config)
             api_key: Hugging Face API key (defaults to config)
+            kb_service_url: Knowledge Base service URL (defaults to config)
         """
         self.stt_model_name = stt_model or settings.stt_model
         self.llm_model_name = llm_model or settings.llm_model
         self.tts_model_name = tts_model or settings.tts_model
         self.api_key = api_key or settings.huggingface_api_key
+        self.kb_service_url = kb_service_url or getattr(settings, 'kb_service_url', 'http://localhost:8001')
         
         # Initialize modules
         log.info("Initializing Voice Agent Pipeline with API...")
@@ -68,7 +71,8 @@ class VoiceAgentPipeline:
                 api_key=self.api_key,
                 max_length=settings.llm_max_length,
                 temperature=settings.llm_temperature,
-                top_p=settings.llm_top_p
+                top_p=settings.llm_top_p,
+                kb_service_url=self.kb_service_url
             )
             
             # Initialize TTS
@@ -91,16 +95,18 @@ class VoiceAgentPipeline:
         self,
         audio_input: bytes,
         language: str = "en",
-        conversation_history: Optional[List[Dict]] = None
+        conversation_history: Optional[List[Dict]] = None,
+        company_id: Optional[str] = None
     ) -> Dict:
         """
-        Process audio through complete pipeline
-        
+        Process audio through complete pipeline with KB integration
+
         Args:
             audio_input: Audio bytes
             language: Language code
             conversation_history: Previous conversation
-            
+            company_id: Company ID for knowledge base context (optional)
+
         Returns:
             Dictionary with transcription, response, audio, and timing info
         """
@@ -121,12 +127,13 @@ class VoiceAgentPipeline:
             # Step 2: LLM Processing
             log.info("Step 2: Generating LLM response...")
             start_time = time.time()
-            
+
             llm_response = self.llm.generate_response(
                 message=transcription,
-                conversation_history=conversation_history
+                conversation_history=conversation_history,
+                company_id=company_id
             )
-            
+
             timing["llm"] = time.time() - start_time
             log.info(f"✓ LLM Response: '{llm_response}' (took {timing['llm']:.2f}s)")
             
@@ -187,15 +194,17 @@ class VoiceAgentPipeline:
     def generate_response_only(
         self,
         message: str,
-        conversation_history: Optional[List[Dict]] = None
+        conversation_history: Optional[List[Dict]] = None,
+        company_id: Optional[str] = None
     ) -> Dict:
         """
-        Only generate LLM response (LLM only)
-        
+        Only generate LLM response (LLM only) with KB integration
+
         Args:
             message: User message
             conversation_history: Previous conversation
-            
+            company_id: Company ID for knowledge base context (optional)
+
         Returns:
             LLM response
         """
@@ -203,7 +212,8 @@ class VoiceAgentPipeline:
             start_time = time.time()
             response = self.llm.generate_response(
                 message=message,
-                conversation_history=conversation_history
+                conversation_history=conversation_history,
+                company_id=company_id
             )
             return {
                 "response": response,

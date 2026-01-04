@@ -119,30 +119,33 @@ async def transcribe_audio_file(
 @router.post("/chat", tags=["LLM"])
 async def chat(request: Dict[str, Any]):
     """
-    Generate chat response (LLM only)
-    
-    Body: {"message": "...", "conversation_history": [...]}
+    Generate chat response (LLM only) with optional KB integration
+
+    Body: {"message": "...", "conversation_history": [...], "company_id": "techstore"}
     """
     try:
         if not pipeline:
             raise HTTPException(status_code=503, detail="Pipeline not initialized")
-        
+
         message = request.get("message")
         if not message:
             raise HTTPException(status_code=400, detail="message is required")
-        
+
         conversation_history = request.get("conversation_history")
-        
+        company_id = request.get("company_id")
+
         result = pipeline.generate_response_only(
             message=message,
-            conversation_history=conversation_history
+            conversation_history=conversation_history,
+            company_id=company_id
         )
-        
+
         return {
             "response": result["response"],
-            "processing_time": result["processing_time"]
+            "processing_time": result["processing_time"],
+            "kb_enabled": company_id is not None
         }
-        
+
     except Exception as e:
         log.error(f"Chat error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -185,31 +188,38 @@ async def synthesize_speech(request: Dict[str, Any]):
 @router.post("/voice-agent", tags=["Voice Agent"])
 async def voice_agent(request: Dict[str, Any]):
     """
-    Complete voice agent pipeline
-    
-    Body: {"audio_base64": "...", "language": "en", "conversation_history": [...]}
+    Complete voice agent pipeline with optional KB integration
+
+    Body: {
+        "audio_base64": "...",
+        "language": "en",
+        "conversation_history": [...],
+        "company_id": "techstore"
+    }
     """
     try:
         if not pipeline:
             raise HTTPException(status_code=503, detail="Pipeline not initialized")
-        
+
         audio_base64 = request.get("audio_base64")
         if not audio_base64:
             raise HTTPException(status_code=400, detail="audio_base64 is required")
-        
+
         language = request.get("language", "en")
         conversation_history = request.get("conversation_history")
-        
+        company_id = request.get("company_id")
+
         # Decode audio
         audio_bytes = base64.b64decode(audio_base64)
-        
+
         # Process through pipeline
         result = pipeline.process_audio(
             audio_input=audio_bytes,
             language=language,
-            conversation_history=conversation_history
+            conversation_history=conversation_history,
+            company_id=company_id
         )
-        
+
         return {
             "transcription": result["transcription"],
             "llm_response": result["llm_response"],
@@ -219,9 +229,10 @@ async def voice_agent(request: Dict[str, Any]):
                 "stt_time": result["timing"]["stt"],
                 "llm_time": result["timing"]["llm"],
                 "tts_time": result["timing"]["tts"]
-            }
+            },
+            "kb_enabled": company_id is not None
         }
-        
+
     except Exception as e:
         log.error(f"Voice agent error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -230,25 +241,27 @@ async def voice_agent(request: Dict[str, Any]):
 @router.post("/voice-agent/file", tags=["Voice Agent"])
 async def voice_agent_file(
     file: UploadFile = File(...),
-    language: str = "en"
+    language: str = "en",
+    company_id: str = None
 ):
     """
-    Complete voice agent pipeline with file upload
+    Complete voice agent pipeline with file upload and optional KB integration
     """
     try:
         if not pipeline:
             raise HTTPException(status_code=503, detail="Pipeline not initialized")
-        
+
         # Read file
         audio_bytes = await file.read()
-        
+
         # Process through pipeline
         result = pipeline.process_audio(
             audio_input=audio_bytes,
             language=language,
-            conversation_history=None
+            conversation_history=None,
+            company_id=company_id
         )
-        
+
         return {
             "transcription": result["transcription"],
             "llm_response": result["llm_response"],
@@ -258,9 +271,10 @@ async def voice_agent_file(
                 "stt_time": result["timing"]["stt"],
                 "llm_time": result["timing"]["llm"],
                 "tts_time": result["timing"]["tts"]
-            }
+            },
+            "kb_enabled": company_id is not None
         }
-        
+
     except Exception as e:
         log.error(f"Voice agent error: {e}")
         raise HTTPException(status_code=500, detail=str(e))

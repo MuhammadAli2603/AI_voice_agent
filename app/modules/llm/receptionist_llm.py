@@ -1,6 +1,7 @@
 """
 Receptionist LLM implementation using Hugging Face Inference API
 No local model download required!
+Integrated with Knowledge Base RAG system for context-aware responses.
 """
 import requests
 from typing import List, Dict, Optional
@@ -33,17 +34,19 @@ Be brief and to the point - aim for 1-3 sentences unless more detail is specific
         api_key: str = "",
         max_length: int = 512,
         temperature: float = 0.7,
-        top_p: float = 0.9
+        top_p: float = 0.9,
+        kb_service_url: str = "http://localhost:8001"
     ):
         """
-        Initialize Receptionist LLM with API
-        
+        Initialize Receptionist LLM with API and Knowledge Base integration
+
         Args:
             model_name: HuggingFace model ID
             api_key: Hugging Face API key
             max_length: Maximum generation length
             temperature: Sampling temperature
             top_p: Nucleus sampling parameter
+            kb_service_url: Knowledge Base service URL
         """
         super().__init__(model_name, device="api")
         self.api_key = api_key
@@ -53,6 +56,7 @@ Be brief and to the point - aim for 1-3 sentences unless more detail is specific
         self.temperature = temperature
         self.top_p = top_p
         self.conversation_history = []
+        self.kb_service_url = kb_service_url
         self.load_model()
         
     def load_model(self):
@@ -73,24 +77,75 @@ Be brief and to the point - aim for 1-3 sentences unless more detail is specific
             log.error(f"Error initializing LLM API: {e}")
             raise
     
+    def _query_knowledge_base(
+        self,
+        query: str,
+        company_id: str,
+        top_k: int = 3
+    ) -> Optional[str]:
+        """
+        Query the knowledge base for relevant context.
+
+        Args:
+            query: User query
+            company_id: Company identifier
+            top_k: Number of results to retrieve
+
+        Returns:
+            Formatted context string or None if KB unavailable
+        """
+        try:
+            log.info(f"Querying knowledge base for company: {company_id}")
+
+            response = requests.post(
+                f"{self.kb_service_url}/api/v1/context",
+                json={
+                    "company_id": company_id,
+                    "query": query,
+                    "top_k": top_k,
+                    "include_metadata": False
+                },
+                timeout=5
+            )
+
+            if response.status_code == 200:
+                result = response.json()
+                context = result.get("context", "")
+                confidence = result.get("confidence_score", 0.0)
+
+                log.info(f"KB context retrieved (confidence: {confidence:.2f})")
+                return context if confidence > 0.3 else None
+            else:
+                log.warning(f"KB query failed: {response.status_code}")
+                return None
+
+        except requests.exceptions.Timeout:
+            log.warning("Knowledge base query timed out")
+            return None
+        except Exception as e:
+            log.warning(f"Knowledge base unavailable: {e}")
+            return None
+
     def generate_response(
         self,
         message: str,
         conversation_history: Optional[List[Dict]] = None,
         max_length: int = None,
         temperature: float = None,
-        top_p: float = None
+        top_p: float = None,
+        company_id: Optional[str] = None
     ) -> str:
         """
-        Generate friendly receptionist response using API
-        
+        Generate friendly receptionist response using API with KB context
+
         Args:
             message: User message
             conversation_history: Previous conversation (optional)
             max_length: Maximum response length
             temperature: Temperature
             top_p: Top-p
-            
+            company_id: Company ID for knowledge base context (optional)
+
         Returns:
             Generated response
         """
@@ -99,9 +154,14 @@ Be brief and to the point - aim for 1-3 sentences unless more detail is specific
             max_new_tokens = max_length or 150
             temp = temperature or self.temperature
             top_p_val = top_p or self.top_p
-            
-            # Build prompt with system message and conversation
-            prompt = self._build_prompt(message)
+
+            # Query knowledge base if company_id provided
+            kb_context = None
+            if company_id:
+                kb_context = self._query_knowledge_base(message, company_id)
+
+            # Build prompt with system message, KB context, and conversation
+            prompt = self._build_prompt(message, kb_context=kb_context)
             
             log.info(f"Sending request to LLM API: '{message[:50]}...'")
             
@@ -164,28 +224,36 @@ Be brief and to the point - aim for 1-3 sentences unless more detail is specific
             log.error(f"Error generating response: {e}")
             return "I apologize, but I'm having trouble right now. How else may I help you?"
     
-    def _build_prompt(self, message: str) -> str:
+    def _build_prompt(self, message: str, kb_context: Optional[str] = None) -> str:
         """
-        Build prompt with system message and conversation history
-        
+        Build prompt with system message, KB context, and conversation history
+
         Args:
             message: Current user message
-            
+            kb_context: Knowledge base context (optional)
+
         Returns:
             Formatted prompt
         """
         # Start with system message
         prompt = f"{self.RECEPTIONIST_SYSTEM}\n\n"
-        
+
+        # Add knowledge base context if available
+        if kb_context:
+            prompt += "Relevant Information from Knowledge Base:\n"
+            prompt += f"{kb_context}\n\n"
+            prompt += "Use the above information to answer the user's question accurately. "
+            prompt += "If the information doesn't contain the answer, politely say you don't have that information.\n\n"
+
         # Add recent conversation history (last 3 turns)
         recent_history = self.conversation_history[-3:] if self.conversation_history else []
         for turn in recent_history:
             prompt += f"User: {turn['user']}\n"
             prompt += f"Assistant: {turn['assistant']}\n\n"
-        
+
         # Add current message
         prompt += f"User: {message}\nAssistant:"
-        
+
         return prompt
     
     def _clean_response(self, response: str) -> str:

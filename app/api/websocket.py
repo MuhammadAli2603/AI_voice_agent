@@ -43,7 +43,8 @@ class WebSocketHandler:
         {
             "type": "audio",
             "data": "base64_audio_data",
-            "language": "en"
+            "language": "en",
+            "company_id": "techstore"
         }
         """
         await self.connect(websocket)
@@ -66,17 +67,19 @@ class WebSocketHandler:
                         # Decode audio
                         audio_bytes = base64.b64decode(data["data"])
                         language = data.get("language", "en")
-                        
+                        company_id = data.get("company_id")
+
                         # Send processing status
                         await websocket.send_json({
                             "type": "processing",
                             "stage": "transcribing"
                         })
-                        
+
                         # Process through pipeline
                         result = self.pipeline.process_audio(
                             audio_input=audio_bytes,
-                            language=language
+                            language=language,
+                            company_id=company_id
                         )
                         
                         # Send transcription
